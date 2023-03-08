@@ -137,7 +137,6 @@ function draw(deck, scoreboard, playerCount) {
   return deck, scoreboard
 }
 
-// let scoreboard = { 1: 0, 2: 0, 3: 0, 4: 0 }
 function findWinner (scoreboard) {
   var scoreList = Object.keys(scoreboard).map((key) => [key, scoreboard[key]])
   const winnerList = scoreList.sort(function (a,b) {
